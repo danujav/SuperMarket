@@ -1,0 +1,86 @@
+insert into student(sid,name,email)
+values('S01','danuja','danuja@gmail.com');
+
+---also set of values can insert---
+
+
+
+
+DELETE FROM Customer 
+WHERE
+    CustID = C001;
+
+
+
+select *from Orders ORDER BY OrderID DESC LIMIT 1;
+
+Update OrderDetail set OrderID = 39  where OrderID = 27;
+
+
+
+DELETE FROM Orders;
+
+DELETE FROM OrderDetail;
+
+
+Insert into OrderDetail Values (71, "I001", 5, 25);
+
+
+select ItemCode, count(ItemCode) as 'Duplicate Rows' from 
+OrderDetail group by ItemCode having count(ItemCode) >0;
+
+
+
+
+
+select ItemCode, count(ItemCode) as 'Duplicate Rows' from 
+OrderDetail group by max(ItemCode) having count(ItemCode) >0;
+
+
+
+Select count(OrderDetail.ItemCode) from OrderDetail Group by ItemCode;
+
+
+
+
+Insert into passwordAdministor Values ("Danuja", "Vimukthi", "admin", "admin","admin","Galle");
+
+
+
+
+
+
+SELECT ItemCode, COUNT(OrderDetail.ItemCode) as   maxitem FROM OrderDetail GROUP BY ItemCode ORDER BY  ItemCode DESC LIMIT 1;
+
+
+    SELECT ItemCode, COUNT(SUM(OrderDetail.OrderQty)) as   maxitem FROM OrderDetail  ItemCode ORDER BY  ItemCode DESC LIMIT 1;
+
+
+select max(OrderQTY) from OrderDetail;
+
+
+SELECT itemcode, COUNT(itemCode) AS LeastMovble from OrderDetail GROUP  by itemCode Order by LeastMovble ASC LIMIT 1;
+
+SELECT itemcode, COUNT(itemCode) AS MostMovble from OrderDetail GROUP  by itemCode Order by MostMovble DESC LIMIT 1;
+
+
+SELECT * FROM     OrderDetail WHERE OrderID = 76;
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
